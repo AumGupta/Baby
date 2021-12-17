@@ -144,7 +144,7 @@ def resource_path(relative_path):
 resource_path('Fonts\Font.ttf')
 resource_path('Sounds\click.mp3')
 resource_path('Sounds\listen.mp3')
-resource_path('Images\AI background.png')
+resource_path('Images\Background.png')
 resource_path('Images\micdown.png')
 resource_path('Images\iconSmall.png')
 resource_path('Images\listen.png')
