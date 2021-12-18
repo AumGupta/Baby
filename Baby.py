@@ -46,8 +46,6 @@ from math import fabs
 import random, sys, os, datetime, webbrowser
 import time as t
 
-from pygame import display
-
 # Safe importing the Additional Modules
 def downloadModule(module = "") -> str: #Give module name as in documentation in strings
     """
@@ -58,9 +56,13 @@ def downloadModule(module = "") -> str: #Give module name as in documentation in
         os.system('cmd /c "pip -v"')
         os.system('cls')
     except:
-        os.system('cmd /c "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py"')
+        print('\n\t`pip` COMMAND NOT FOUND WHICH IS NEEDED FOR DOWNLOADING MODULE! \n')
+        try:
+            os.system('cmd /c "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py"')
+        except:
+            print('\n\n\t KINDLY INSTALL PIP MANUALLY!\n\n\n')
+            
         os.system('cmd /c "python get-pip.py"')
-        os.system('cls')
     
     print('\n\tDOWNLOADING MISSING MODULE : '+module+' :\n')
     os.system('cmd /c "pip install ' + module)
@@ -525,7 +527,7 @@ if __name__ == "__main__":
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id) # For changing voice to Female
-    # engine.setProperty('rate', 187) # for changing rate of speech
+    engine.setProperty('rate', 170) # for changing rate of speech
 
     # Initiating pyGame
     p.init()
