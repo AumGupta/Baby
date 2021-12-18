@@ -161,16 +161,20 @@ def about(introMsg = "Hi i am baby, I am the creation of Mr.Om Gupta. What I can
     # speakText("Hi i am baby, I am the creation of Mr.Owm Goopta.")
 
 def intro():
-    blitBig("Hi!", 240, 200)
+    """
+    For introduction
+    """
+    blitBig("Hi!", 200, 200)
     speakText("Hi!")
     p.display.update(screen.fill("black"))
 
-    blitBig("I'm", 240, 200)
-    blitBig("Baby",200,310)
+    blitBig("I'm", 200, 180)
+    blitBig("Baby",170,290)
     speakText("I'm Baby")
     p.display.update(screen.fill("black"))
 
-    blitBig("I'd love to help you",y=200)
+    blitBig("I'd love to help",x=30,y=200)
+    blitBig("you!",180,310)
     speakText("I'd love to help you")
     p.display.update(screen.fill("black"))
     
@@ -196,7 +200,7 @@ def blitBig(text, x=100, y=100):
     * x - x-coordinate of text
     * y - y-coordinate of text
     """
-    txt = bigFont.render(text, True, (30, 30, 30))
+    txt = bigFont.render(text, True, (255, 255, 255))
     p.display.update(screen.blit(txt, (x, y)))
 
 def blitPara(text, wordsPerLine = 5, lineSpacing = 100):
@@ -519,6 +523,8 @@ if __name__ == "__main__":
     # Initiating SpeechRecognition engine
     listener = speech_recognition.Recognizer()
     engine = pyttsx3.init()
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id) # For changing voice to Female
     # engine.setProperty('rate', 187) # for changing rate of speech
 
     # Initiating pyGame
