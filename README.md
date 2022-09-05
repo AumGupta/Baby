@@ -1,4 +1,4 @@
-# [Baby](https://github.com/AumGupta/Baby) - The Voice Assistant
+# [Baby](https://github.com/AumGupta/Baby)
  _the genie_
 
 
