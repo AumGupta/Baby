@@ -28,10 +28,11 @@
 >[Om Gupta](https://github.com/AumGupta/)
 
 ## ❤️ Get in touch
->- [LinkedIn](https://www.linkedin.com/in/aaumgupta/)
->- [Instagram](https://www.instagram.com/aaumgupta/)
+>[![](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aaumgupta@gmail.com)
+[![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aaumgupta/)
+[![](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/aaumgupta/)
 
-## 📝 License
-[GNU General Public License v3.0](https://github.com/AumGupta/Baby/blob/main/LICENSE)
+### License
+[![](https://img.shields.io/github/license/AumGupta/Baby.svg)](https://github.com/AumGupta/Baby/blob/main/LICENSE) 
 
 ---
